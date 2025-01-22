@@ -20,6 +20,16 @@ namespace Lesson11
             Appliance refrigerator = new Refrigerator();
             refrigerator.TurnOn();
             refrigerator.TurnOff();
+
+            Cat cat = new Cat();
+            cat.Eat();
+            cat.Sleep();
+            cat.Speak();
+
+            Dog dog = new Dog();
+            dog.Eat();
+            dog.Sleep();
+            dog.Speak();
         }
     }
 }

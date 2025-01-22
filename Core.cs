@@ -13,6 +13,11 @@ namespace Core
         public abstract void TurnOff();
     }
 
+    abstract class Animal
+    {
+        public abstract void Eat();
+        public abstract void Sleep();
+    }
 
     class Car : IMovable
     {
@@ -60,6 +65,42 @@ namespace Core
         {
             Console.WriteLine("Холодильник выключен.");
         }
+    }
+
+    class Cat : Animal
+    {
+        public override void Eat()
+        {
+            Console.WriteLine("Кошка ест еду для кошек.");
+        }
+
+        public override void Sleep()
+        {
+            Console.WriteLine("Кошка спит.");
+        }
+
+        public void Speak()
+        {
+            Console.WriteLine("Кошка говорит Мяу");
+        }
+    }
+
+    class Dog : Animal
+    {
+        public override void Eat()
+        {
+            Console.WriteLine("Собака ест еду для собак.");
+        }
+
+        public override void Sleep()
+        {
+            Console.WriteLine("Собака спит.");
+        }
+
+        public void Speak()
+        {
+            Console.WriteLine("Собака говорит Гав");
+        } 
     }
 
 }
