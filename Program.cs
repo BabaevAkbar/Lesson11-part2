@@ -1,4 +1,5 @@
 ﻿using System;
+using Core;
 
 namespace Lesson11
 {
@@ -6,7 +7,12 @@ namespace Lesson11
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            IMovable car = new Car();
+            car.Move(110);
+
+            IMovable robot = new Robot();
+            robot.Move(20);
+
         }
     }
 }
