@@ -13,6 +13,13 @@ namespace Lesson11
             IMovable robot = new Robot();
             robot.Move(20);
 
+            Appliance machine = new WashingMachine();
+            machine.TurnOn();
+            machine.TurnOff();
+
+            Appliance refrigerator = new Refrigerator();
+            refrigerator.TurnOn();
+            refrigerator.TurnOff();
         }
     }
 }
